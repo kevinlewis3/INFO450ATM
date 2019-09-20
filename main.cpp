@@ -22,7 +22,7 @@ int main() {
         {
         withdraw = getWithdraw();
             if (withdraw >= 50) {
-                //Divides the remainder to be withdrawn by 50, which determines what should be depsended.
+                //Divides the remainder to be withdrawn by 50, which determines what should be dispense.
                 billFifty = (withdraw / 50);
                 cout << "You have: [" << billFifty << "] $50 dollar bills." << endl;
                 //Determine the remaining amount to be withdrawn to user after removing $50 bills
@@ -30,26 +30,42 @@ int main() {
             }
 
             if (withdraw >= 20) {
+                //Divides the remainder to be withdrawn by 20, which determines what should be dispense.
+
                 billTwenty = (withdraw / 20);
                 cout << "You have: [" << billTwenty << "] $20 dollar bills." << endl;
+                //Determine the remaining amount to be withdrawn to user after removing $20 bills
+
                 withdraw %= 20;
             }
 
             if (withdraw >= 10) {
+                //Divides the remainder to be withdrawn by 10, which determines what should be dispense.
+
                 billTen = (withdraw / 10);
                 cout << "You have: [" << billTen << "] $10 dollar bills." << endl;
+                //Determine the remaining amount to be withdrawn to user after removing $10 bills
+
                 withdraw %= 10;
             }
 
             if (withdraw >= 5) {
+                //Divides the remainder to be withdrawn by 5, which determines what should be dispense.
+
                 billFive = (withdraw / 5);
                 cout << "You have: [" << billFive << "] $5 dollar bills." << endl;
+                //Determine the remaining amount to be withdrawn to user after removing $5 bills
+
                 withdraw %= 5;
             }
 
             if (withdraw >= 1) {
+                //Divides the remainder to be withdrawn by 1, which determines what should be dispense.
+
                 billOne = (withdraw / 1);
                 cout << "You have [" << billOne << "] $1 dollar bills." << endl;
+                //Determine the remaining amount to be withdrawn to user after removing $1 bills
+
                 withdraw %= 1;
             }
 
